@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMMO 2026 - Stratégie & Tarifs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-slate-900">IMMO <span class="text-blue-600">2026</span></span>
+                </div>
+                <!-- Navigation centrée ou à droite maintenant que le bouton est retiré -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#contexte" class="text-gray-600 hover:text-blue-600 font-medium">Contexte</a>
+                    <a href="#nouveautes" class="text-gray-600 hover:text-blue-600 font-medium">Nouveautés</a>
+                    <a href="#tarifs" class="text-gray-600 hover:text-blue-600 font-medium">Tarifs</a>
+                    <a href="#objections" class="text-gray-600 hover:text-blue-600 font-medium">Arguments</a>
+                </div>
+                <!-- Espace vide pour maintenir l'équilibre visuel si nécessaire ou simplement rien -->
+                <div class="hidden md:block w-10"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="contexte" class="gradient-bg text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="inline-block bg-blue-500/20 text-blue-300 px-4 py-1 rounded-full text-sm font-semibold mb-6">
+                80 ANS • TRAFIC BOOSTÉ • CONTEXTE POLITIQUE FORT
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">5 ans pour changer le logement</h1>
+            <p class="text-xl text-slate-300 max-w-3xl mx-auto mb-10">
+                Un événement central pour l'immobilier animé par le duo d'exception <span class="text-white font-semibold">Marie DRUCKER & Charlotte BOUTELOUP</span>.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mt-16">
+                <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/10">
+                    <div class="text-3xl font-bold text-blue-400 mb-2">80%</div>
+                    <div class="text-slate-300 font-medium">Dirigeants et décideurs</div>
+                </div>
+                <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/10">
+                    <div class="text-3xl font-bold text-blue-400 mb-2">72%</div>
+                    <div class="text-slate-300 font-medium">Audience de province</div>
+                </div>
+                <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/10">
+                    <div class="text-3xl font-bold text-blue-400 mb-2">100%</div>
+                    <div class="text-slate-300 font-medium">Professionnels qualifiés</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nouveautés & Offres -->
+    <section id="nouveautes" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold mb-8">Les Nouveautés 2026</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4 items-start p-4 bg-white rounded-xl shadow-sm border border-gray-100 card-hover">
+                        <div class="bg-blue-100 p-3 rounded-lg text-blue-600">
+                            <svg xmlns="http://www.w3.org/2003/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Village Transition Énergétique</h3>
+                            <p class="text-gray-600">Regroupement exclusif des acteurs de la filière.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-4 bg-white rounded-xl shadow-sm border border-gray-100 card-hover">
+                        <div class="bg-orange-100 p-3 rounded-lg text-orange-600">
+                            <svg xmlns="http://www.w3.org/2003/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Trophées de la Rénovation</h3>
+                            <p class="text-gray-600">2ème édition pour valoriser l'excellence du secteur.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-4 bg-white rounded-xl shadow-sm border border-gray-100 card-hover">
+                        <div class="bg-green-100 p-3 rounded-lg text-green-600">
+                            <svg xmlns="http://www.w3.org/2003/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Personnalisation des stands</h3>
+                            <p class="text-gray-600">Désormais incluse sur tous les stands équipés !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 bg-blue-50 p-8 rounded-3xl border border-blue-100">
+                <h2 class="text-2xl font-bold mb-6 text-blue-900">Offres Exclusives</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <span class="text-blue-600">✔</span>
+                        <span class="font-medium text-slate-700">Pass entrée OFFERT aux patrons porteurs de carte pro</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-blue-600">✔</span>
+                        <span class="font-medium text-slate-700">Doublement des quotas d'invitation clients/prospects</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-blue-600">✔</span>
+                        <span class="font-medium text-slate-700 underline decoration-blue-300">Stickage complet des cloisons inclus</span>
+                    </li>
+                </ul>
+                <div class="mt-8 p-4 bg-white rounded-xl border border-blue-200">
+                    <p class="text-sm text-blue-800 italic font-medium">"L'objectif est clair : vous générer plus de leads cette année grâce à notre stratégie de trafic renforcée."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifs Section -->
+    <section id="tarifs" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-2 text-center">Grille Tarifaire 2026</h2>
+            <p class="text-gray-500 text-center mb-12 italic">Une cohérence prix/m² et plus de services intégrés</p>
+            
+            <div class="table-container rounded-2xl border border-gray-200 shadow-xl mb-12">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-slate-900 text-white">
+                        <tr>
+                            <th class="p-4 font-semibold">Format Stand</th>
+                            <th class="p-4 font-semibold">Tarif 2026</th>
+                            <th class="p-4 font-semibold">Prix / m²</th>
+                            <th class="p-4 font-semibold">Variation vs 2025</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-medium italic">Start-up</td>
+                            <td class="p-4 font-bold">1 500 €</td>
+                            <td class="p-4 text-gray-500">750 €</td>
+                            <td class="p-4 text-orange-600 font-semibold">+25%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-medium">4m² Standard</td>
+                            <td class="p-4 font-bold">4 000 €</td>
+                            <td class="p-4 text-gray-500">1 000 €</td>
+                            <td class="p-4 text-green-600 font-semibold">+5%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 bg-blue-50/30">
+                            <td class="p-4 font-medium">4m² Premium</td>
+                            <td class="p-4 font-bold text-blue-600">4 800 €</td>
+                            <td class="p-4 text-gray-500">1 200 €</td>
+                            <td class="p-4 text-orange-600 font-semibold">+26%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-medium">6m² Standard</td>
+                            <td class="p-4 font-bold">6 300 €</td>
+                            <td class="p-4 text-gray-500">1 050 €</td>
+                            <td class="p-4 text-green-600 font-semibold">-9%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-medium">12m² Premium</td>
+                            <td class="p-4 font-bold text-blue-600">13 000 €</td>
+                            <td class="p-4 text-gray-500">1 083 €</td>
+                            <td class="p-4 text-orange-600 font-semibold">+24%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 bg-slate-50">
+                            <td class="p-4 font-medium italic">Stands nus</td>
+                            <td class="p-4 font-bold">-</td>
+                            <td class="p-4 text-gray-500 font-bold">800 €</td>
+                            <td class="p-4 text-orange-600 font-semibold">+7%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-2xl">
+                    <h3 class="font-bold text-lg mb-4 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2003/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Justification de l'évolution
+                    </h3>
+                    <ul class="text-sm space-y-2 text-gray-600">
+                        <li>• <strong>Stickage complet</strong> inclus sur tous les formats pré-équipés.</li>
+                        <li>• Nouveau design de stand pour les 4m² (plus qualitatif).</li>
+                        <li>• <strong>Soirée de Gala :</strong> 1 place incluse (Premium) ou 2 places (20m²+).</li>
+                        <li>• Répercussion partielle des coûts (locatif, énergie, salon).</li>
+                    </ul>
+                </div>
+                <div class="bg-orange-50 p-6 rounded-2xl border border-orange-100">
+                    <h3 class="font-bold text-lg mb-4 text-orange-900">Note sur le 6m²</h3>
+                    <p class="text-sm text-orange-800">Le prix du 6m² diminue cette année pour assurer une cohérence parfaite sur le prix au m² par rapport au plan global de l'événement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Argumentaire / Objections -->
+    <section id="objections" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Foire aux Objections</h2>
+            
+            <div class="space-y-4">
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer">
+                        <h3 class="font-bold text-lg flex items-center gap-3">
+                            <span class="text-red-500">✘</span> "Je n'ai pas eu de résultats l'an passé"
+                        </h3>
+                        <span class="transition group-open:rotate-180">
+                            <svg xmlns="http://www.w3.org/2003/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-gray-700 leading-relaxed">
+                        Toute la stratégie 2026 a été pensée pour augmenter le trafic : pass gratuit pour les patrons, invitations doublées, et communication massive. Notre seul objectif : <span class="font-bold text-blue-600">vous générer plus de leads.</span>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <summary class="flex items-center justify-between cursor-pointer">
+                        <h3 class="font-bold text-lg flex items-center gap-3">
+                            <span class="text-red-500">✘</span> "C'est trop cher"
+                        </h3>
+                        <span class="transition group-open:rotate-180">
+                            <svg xmlns="http://www.w3.org/2003/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-gray-700 leading-relaxed">
+                        Vous investissez dans une audience composée de <span class="font-bold">80% de décideurs</span>. Un seul bon contact peut rentabiliser largement votre présence sur l'année. C'est l'événement central de la profession.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <summary class="flex items-center justify-between cursor-pointer">
+                        <h3 class="font-bold text-lg flex items-center gap-3">
+                            <span class="text-red-500">✘</span> "Pas de budget"
+                        </h3>
+                        <span class="transition group-open:rotate-180">
+                            <svg xmlns="http://www.w3.org/2003/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="mt-4 pt-4 border-t border-gray-100 text-gray-700 leading-relaxed">
+                        Nous pouvons adapter la surface ou travailler sur une présence plus optimisée. Rappelez-vous que <span class="font-bold italic underline">ne pas être présent peut coûter plus cher en opportunités manquées.</span>
+                    </div>
+                </details>
+            </div>
+
+            <div class="mt-12 p-8 bg-blue-600 rounded-2xl text-white text-center">
+                <h3 class="text-xl font-bold mb-4">Focus Syndics / Copros</h3>
+                <p class="mb-2">N'oubliez pas les Trophées de la rénovation énergétique.</p>
+                <p class="text-blue-100 text-sm">30% de nos adhérents congressistes font du syndic.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-gray-400 py-12 text-center">
+        <p class="mb-4">© 2026 Salon IMMO - Tête-à-tête Relation Client</p>
+        <div class="flex justify-center space-x-6 text-sm">
+            <a href="#" class="hover:text-white">Mentions légales</a>
+            <a href="#" class="hover:text-white">Conditions de vente</a>
+            <a href="#" class="hover:text-white">Contact</a>
+        </div>
+    </footer>
+
+</body>
+</html>
