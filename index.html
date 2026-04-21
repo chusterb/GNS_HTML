@@ -3,292 +3,420 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMMO 2026 - Stratégie & Tarifs</title>
+    <title>Congrès IMMO FNAIM 2026 - Kit Commercial Complet</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            transition: all 0.3s ease;
-        }
-        .table-container {
-            overflow-x: auto;
-        }
-        details summary::-webkit-details-marker {
-            display: none;
-        }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .fnaim-blue { background-color: #004a99; }
+        .fnaim-text { color: #004a99; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .table-container { overflow-x: auto; }
+        details summary::-webkit-details-marker { display: none; }
     </style>
 </head>
-<body class="bg-gray-50 text-slate-800">
+<body class="bg-slate-50 text-slate-900">
 
     <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
-                <div class="flex items-center">
-                    <span class="text-2xl font-bold text-slate-900">IMMO <span class="text-blue-600">2026</span></span>
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 fnaim-blue rounded flex items-center justify-center text-white font-bold italic text-xs">F</div>
+                    <span class="text-xl font-bold text-slate-900 uppercase tracking-tighter">IMMO <span class="text-blue-600">2026</span></span>
                 </div>
-                <!-- Navigation centrée ou à droite maintenant que le bouton est retiré -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#contexte" class="text-gray-600 hover:text-blue-600 font-medium">Contexte</a>
-                    <a href="#nouveautes" class="text-gray-600 hover:text-blue-600 font-medium">Nouveautés</a>
-                    <a href="#tarifs" class="text-gray-600 hover:text-blue-600 font-medium">Tarifs</a>
-                    <a href="#objections" class="text-gray-600 hover:text-blue-600 font-medium">Arguments</a>
+                <!-- Menu de navigation mis à jour -->
+                <div class="hidden lg:flex space-x-6 text-sm font-semibold">
+                    <a href="#institution" class="text-gray-600 hover:text-blue-600">La Fédération</a>
+                    <a href="#stats" class="text-gray-600 hover:text-blue-600">Résultats 2025</a>
+                    <a href="#nouveautes" class="text-gray-600 hover:text-blue-600">Nouveautés</a>
+                    <a href="#tarifs" class="text-gray-600 hover:text-blue-600">Tarifs</a>
+                    <a href="#objections" class="text-gray-600 hover:text-blue-600">Arguments</a>
+                    <a href="#planning" class="text-gray-600 hover:text-blue-600">Planning</a>
+                    <a href="#equipe" class="text-gray-600 hover:text-blue-600">Contact</a>
                 </div>
-                <!-- Espace vide pour maintenir l'équilibre visuel si nécessaire ou simplement rien -->
-                <div class="hidden md:block w-10"></div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header id="contexte" class="gradient-bg text-white py-20 px-4">
-        <div class="max-w-7xl mx-auto text-center">
-            <div class="inline-block bg-blue-500/20 text-blue-300 px-4 py-1 rounded-full text-sm font-semibold mb-6">
-                80 ANS • TRAFIC BOOSTÉ • CONTEXTE POLITIQUE FORT
+    <header class="gradient-bg text-white py-24 px-4 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <div class="inline-block bg-blue-500/20 text-blue-300 px-4 py-1 rounded-full text-xs font-black mb-6 tracking-widest uppercase border border-blue-500/30">
+                80 ANS • 80ème ÉDITION • PALAIS DES CONGRÈS PARIS
             </div>
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">5 ans pour changer le logement</h1>
-            <p class="text-xl text-slate-300 max-w-3xl mx-auto mb-10">
-                Un événement central pour l'immobilier animé par le duo d'exception <span class="text-white font-semibold">Marie DRUCKER & Charlotte BOUTELOUP</span>.
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight italic">5 ans pour changer le logement</h1>
+            <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+                7 & 8 Décembre 2026 — Porte Maillot. Animé par le duo d'exception <span class="text-white font-bold underline decoration-blue-500">Marie DRUCKER & Charlotte BOUTELOUP</span>.
             </p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mt-16">
-                <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/10">
-                    <div class="text-3xl font-bold text-blue-400 mb-2">80%</div>
-                    <div class="text-slate-300 font-medium">Dirigeants et décideurs</div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-16">
+                <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/10 text-left">
+                    <div class="text-3xl font-black text-blue-400 mb-1">3 000+</div>
+                    <div class="text-xs text-slate-400 uppercase font-bold tracking-tighter">Congressistes B2B</div>
                 </div>
-                <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/10">
-                    <div class="text-3xl font-bold text-blue-400 mb-2">72%</div>
-                    <div class="text-slate-300 font-medium">Audience de province</div>
+                <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/10 text-left">
+                    <div class="text-3xl font-black text-blue-400 mb-1">80%</div>
+                    <div class="text-xs text-slate-400 uppercase font-bold tracking-tighter">Dirigeants / Décideurs</div>
                 </div>
-                <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/10">
-                    <div class="text-3xl font-bold text-blue-400 mb-2">100%</div>
-                    <div class="text-slate-300 font-medium">Professionnels qualifiés</div>
+                <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/10 text-left">
+                    <div class="text-3xl font-black text-blue-400 mb-1">100+</div>
+                    <div class="text-xs text-slate-400 uppercase font-bold tracking-tighter">Exposants Qualifiés</div>
+                </div>
+                <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/10 text-left">
+                    <div class="text-3xl font-black text-blue-400 mb-1">72%</div>
+                    <div class="text-xs text-slate-400 uppercase font-bold tracking-tighter">Public de Province</div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Nouveautés & Offres -->
-    <section id="nouveautes" class="py-20 max-w-7xl mx-auto px-4">
-        <div class="flex flex-col md:flex-row gap-12">
+    <!-- Section Institutionnelle (FNAIM) -->
+    <section id="institution" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-16 items-center">
             <div class="flex-1">
-                <h2 class="text-3xl font-bold mb-8">Les Nouveautés 2026</h2>
+                <h2 class="text-blue-600 font-black uppercase tracking-widest text-sm mb-4">Notre Institution</h2>
+                <h3 class="text-4xl font-black mb-6">La 1ère fédération patronale de France</h3>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    La FNAIM défend et accompagne les professionnels de l'immobilier depuis 80 ans. Représentant <strong>48 290 salariés</strong> (soit 48,38% du secteur), elle est le pilier de confiance pour les agences et les consommateurs.
+                </p>
+                <div class="grid grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="text-3xl font-black fnaim-text mb-1">8 500</div>
+                        <div class="text-sm font-bold text-gray-400 uppercase">Agences Adhérentes</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="text-3xl font-black fnaim-text mb-1">51</div>
+                        <div class="text-sm font-bold text-gray-400 uppercase">Chambres Locales</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 w-full lg:max-w-md bg-slate-900 rounded-3xl p-8 text-white shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-4 -bottom-4 opacity-10">
+                    <svg width="200" height="200" viewBox="0 0 100 100"><circle cx="100" cy="100" r="80" fill="white"/></svg>
+                </div>
+                <h4 class="text-blue-400 font-bold mb-6 italic uppercase tracking-widest text-sm">Direction Fédérale</h4>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center font-bold text-xl text-blue-400 border border-slate-700">LC</div>
+                    <div>
+                        <div class="text-xl font-black">Loïc CANTIN</div>
+                        <div class="text-slate-400 text-sm italic">Président fédéral (Mandat → fin 2027)</div>
+                    </div>
+                </div>
+                <div class="space-y-4 text-sm leading-relaxed text-slate-300">
+                    <p><strong>Services inclus dans la cotisation :</strong> Assistance juridique, formation ESI, imprimés légaux, sites d'annonce, et offres négociées partenaires.</p>
+                    <a href="https://www.fnaim.fr" target="_blank" class="inline-flex items-center gap-2 text-blue-400 font-bold hover:underline">
+                        Visiter fnaim.fr 
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistiques 2025 -->
+    <section id="stats" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <h2 class="text-center text-4xl font-black mb-4 italic">Bilan Satisfaction 2025</h2>
+            <p class="text-center text-slate-400 mb-16 uppercase tracking-widest text-sm font-bold">La preuve par les chiffres</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 card-hover text-center">
+                    <div class="text-6xl font-black text-green-400 mb-4 tracking-tighter">98%</div>
+                    <p class="text-sm text-slate-400 uppercase leading-tight font-bold">Trouvent facilement les exposants</p>
+                    <div class="mt-6 h-1 w-full bg-white/10 rounded-full"><div class="h-full bg-green-400 w-[98%]"></div></div>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 card-hover text-center">
+                    <div class="text-6xl font-black text-blue-400 mb-4 tracking-tighter">95%</div>
+                    <p class="text-sm text-slate-400 uppercase leading-tight font-bold">Impact image de marque</p>
+                    <div class="mt-6 h-1 w-full bg-white/10 rounded-full"><div class="h-full bg-blue-400 w-[95%]"></div></div>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 card-hover text-center">
+                    <div class="text-6xl font-black text-orange-400 mb-4 tracking-tighter">89%</div>
+                    <p class="text-sm text-slate-400 uppercase leading-tight font-bold">Participation 2026</p>
+                    <div class="mt-6 h-1 w-full bg-white/10 rounded-full"><div class="h-full bg-orange-400 w-[89%]"></div></div>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 card-hover text-center">
+                    <div class="text-6xl font-black text-purple-400 mb-4 tracking-tighter">95%</div>
+                    <p class="text-sm text-slate-400 uppercase leading-tight font-bold">Recommandent l'événement</p>
+                    <div class="mt-6 h-1 w-full bg-white/10 rounded-full"><div class="h-full bg-purple-400 w-[95%]"></div></div>
+                </div>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white/5 p-8 rounded-3xl border border-white/10">
+                <div>
+                    <h4 class="text-2xl font-black mb-4 italic text-blue-400">Focus Business 2026</h4>
+                    <p class="text-slate-400 leading-relaxed">
+                        Bien que 75% des exposants aient généré des leads, nous renforçons le ciblage en 2026 pour optimiser la qualité des contacts et le sentiment de ROI. 
+                        <strong>Objectif : 100% de satisfaction technique.</strong>
+                    </p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <div class="bg-green-500/10 border border-green-500/20 p-4 rounded-xl flex justify-between items-center">
+                        <span class="text-sm font-bold uppercase">Résolution technique rapide</span>
+                        <span class="text-2xl font-black text-green-400">86%</span>
+                    </div>
+                    <div class="bg-blue-500/10 border border-blue-500/20 p-4 rounded-xl flex justify-between items-center">
+                        <span class="text-sm font-bold uppercase">Se sont rendus sur un stand</span>
+                        <span class="text-2xl font-black text-blue-400">94%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nouveautés 2026 -->
+    <section id="nouveautes" class="py-24 max-w-7xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-12 items-stretch">
+            <div class="flex-1">
+                <h2 class="text-3xl font-black mb-12 italic text-slate-800">Les Innovations 2026</h2>
                 <div class="space-y-6">
-                    <div class="flex gap-4 items-start p-4 bg-white rounded-xl shadow-sm border border-gray-100 card-hover">
-                        <div class="bg-blue-100 p-3 rounded-lg text-blue-600">
-                            <svg xmlns="http://www.w3.org/2003/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                            </svg>
+                    <div class="flex gap-5 p-6 bg-white rounded-2xl shadow-sm border border-slate-100 card-hover">
+                        <div class="bg-blue-100 p-4 rounded-2xl text-blue-600">
+                            <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Village Transition Énergétique</h3>
-                            <p class="text-gray-600">Regroupement exclusif des acteurs de la filière.</p>
+                            <h3 class="font-black text-xl mb-1 italic leading-tight">Village Transition Énergétique</h3>
+                            <p class="text-gray-500">Un espace exclusif regroupant tous les acteurs de la filière durable.</p>
                         </div>
                     </div>
-                    <div class="flex gap-4 items-start p-4 bg-white rounded-xl shadow-sm border border-gray-100 card-hover">
-                        <div class="bg-orange-100 p-3 rounded-lg text-orange-600">
-                            <svg xmlns="http://www.w3.org/2003/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                            </svg>
+                    <div class="flex gap-5 p-6 bg-white rounded-2xl shadow-sm border border-slate-100 card-hover">
+                        <div class="bg-orange-100 p-4 rounded-2xl text-orange-600">
+                            <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Trophées de la Rénovation</h3>
-                            <p class="text-gray-600">2ème édition pour valoriser l'excellence du secteur.</p>
+                            <h3 class="font-black text-xl mb-1 italic leading-tight">Trophées de la Rénovation</h3>
+                            <p class="text-gray-500">Valorisation des meilleures initiatives du secteur en plénière.</p>
                         </div>
                     </div>
-                    <div class="flex gap-4 items-start p-4 bg-white rounded-xl shadow-sm border border-gray-100 card-hover">
-                        <div class="bg-green-100 p-3 rounded-lg text-green-600">
-                            <svg xmlns="http://www.w3.org/2003/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-                            </svg>
+                    <div class="flex gap-5 p-6 bg-white rounded-2xl shadow-sm border border-slate-100 card-hover">
+                        <div class="bg-green-100 p-4 rounded-2xl text-green-600">
+                            <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Personnalisation des stands</h3>
-                            <p class="text-gray-600">Désormais incluse sur tous les stands équipés !</p>
+                            <h3 class="font-black text-xl mb-1 italic leading-tight text-blue-600">Personnalisation Premium</h3>
+                            <p class="text-gray-500 font-bold">Désormais incluse sur tous les stands équipés !</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="flex-1 bg-blue-50 p-8 rounded-3xl border border-blue-100">
-                <h2 class="text-2xl font-bold mb-6 text-blue-900">Offres Exclusives</h2>
-                <ul class="space-y-4">
-                    <li class="flex items-center gap-3">
-                        <span class="text-blue-600">✔</span>
-                        <span class="font-medium text-slate-700">Pass entrée OFFERT aux patrons porteurs de carte pro</span>
+            <div class="flex-1 bg-blue-600 text-white p-10 rounded-3xl shadow-xl relative overflow-hidden flex flex-col justify-center">
+                <h2 class="text-3xl font-black mb-8 italic">Offres Exclusives</h2>
+                <ul class="space-y-6 text-lg">
+                    <li class="flex items-center gap-4">
+                        <span class="bg-white/20 p-2 rounded-full">✔</span>
+                        <span class="font-bold">Pass entrée OFFERT (Patrons Carte Pro)</span>
                     </li>
-                    <li class="flex items-center gap-3">
-                        <span class="text-blue-600">✔</span>
-                        <span class="font-medium text-slate-700">Doublement des quotas d'invitation clients/prospects</span>
+                    <li class="flex items-center gap-4">
+                        <span class="bg-white/20 p-2 rounded-full">✔</span>
+                        <span class="font-bold">Doublement des quotas d'invitation</span>
                     </li>
-                    <li class="flex items-center gap-3">
-                        <span class="text-blue-600">✔</span>
-                        <span class="font-medium text-slate-700 underline decoration-blue-300">Stickage complet des cloisons inclus</span>
+                    <li class="flex items-center gap-4">
+                        <span class="bg-white/20 p-2 rounded-full">✔</span>
+                        <span class="font-bold">Stickage complet des cloisons inclus</span>
                     </li>
                 </ul>
-                <div class="mt-8 p-4 bg-white rounded-xl border border-blue-200">
-                    <p class="text-sm text-blue-800 italic font-medium">"L'objectif est clair : vous générer plus de leads cette année grâce à notre stratégie de trafic renforcée."</p>
+                <div class="mt-12 bg-white/10 p-6 rounded-2xl border border-white/20 italic text-blue-50">
+                    "Plus de leads, plus de visibilité : une stratégie 2026 au service de votre rentabilité."
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Tarifs Section -->
-    <section id="tarifs" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-2 text-center">Grille Tarifaire 2026</h2>
-            <p class="text-gray-500 text-center mb-12 italic">Une cohérence prix/m² et plus de services intégrés</p>
+    <section id="tarifs" class="py-24 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-black mb-4 italic">Grille Tarifaire 2026</h2>
+            <p class="text-gray-500 mb-16 italic font-medium text-lg">Transparence, cohérence et services intégrés.</p>
             
-            <div class="table-container rounded-2xl border border-gray-200 shadow-xl mb-12">
+            <div class="table-container rounded-3xl border border-slate-200 shadow-2xl mb-12 overflow-hidden">
                 <table class="w-full text-left border-collapse">
-                    <thead class="bg-slate-900 text-white">
+                    <thead class="bg-slate-900 text-white text-center">
                         <tr>
-                            <th class="p-4 font-semibold">Format Stand</th>
-                            <th class="p-4 font-semibold">Tarif 2026</th>
-                            <th class="p-4 font-semibold">Prix / m²</th>
-                            <th class="p-4 font-semibold">Variation vs 2025</th>
+                            <th class="p-6 font-bold uppercase tracking-widest text-xs text-left">Format Stand</th>
+                            <th class="p-6 font-bold uppercase tracking-widest text-xs">Tarif 2026</th>
+                            <th class="p-6 font-bold uppercase tracking-widest text-xs">Prix / m²</th>
+                            <th class="p-6 font-bold uppercase tracking-widest text-xs">Variation N-1</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-gray-100">
-                        <tr class="hover:bg-gray-50">
-                            <td class="p-4 font-medium italic">Start-up</td>
-                            <td class="p-4 font-bold">1 500 €</td>
-                            <td class="p-4 text-gray-500">750 €</td>
-                            <td class="p-4 text-orange-600 font-semibold">+25%</td>
+                    <tbody class="divide-y divide-slate-100 text-center">
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="p-6 font-bold italic text-slate-500 text-left">Start-up</td>
+                            <td class="p-6 font-black text-xl text-slate-800">1 500 €</td>
+                            <td class="p-6 font-bold text-slate-400">750 €</td>
+                            <td class="p-6 text-orange-600 font-black">+25%</td>
                         </tr>
-                        <tr class="hover:bg-gray-50">
-                            <td class="p-4 font-medium">4m² Standard</td>
-                            <td class="p-4 font-bold">4 000 €</td>
-                            <td class="p-4 text-gray-500">1 000 €</td>
-                            <td class="p-4 text-green-600 font-semibold">+5%</td>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="p-6 font-bold text-slate-700 text-left">4m² Standard</td>
+                            <td class="p-6 font-black text-xl text-slate-800">4 000 €</td>
+                            <td class="p-6 font-bold text-slate-400">1 000 €</td>
+                            <td class="p-6 text-green-600 font-black">+5%</td>
                         </tr>
-                        <tr class="hover:bg-gray-50 bg-blue-50/30">
-                            <td class="p-4 font-medium">4m² Premium</td>
-                            <td class="p-4 font-bold text-blue-600">4 800 €</td>
-                            <td class="p-4 text-gray-500">1 200 €</td>
-                            <td class="p-4 text-orange-600 font-semibold">+26%</td>
+                        <tr class="bg-blue-50/50 hover:bg-blue-50 transition-colors">
+                            <td class="p-6 font-bold text-blue-900 text-left">4m² Premium</td>
+                            <td class="p-6 font-black text-xl text-blue-600">4 800 €</td>
+                            <td class="p-6 font-bold text-slate-400">1 200 €</td>
+                            <td class="p-6 text-orange-600 font-black">+26%</td>
                         </tr>
-                        <tr class="hover:bg-gray-50">
-                            <td class="p-4 font-medium">6m² Standard</td>
-                            <td class="p-4 font-bold">6 300 €</td>
-                            <td class="p-4 text-gray-500">1 050 €</td>
-                            <td class="p-4 text-green-600 font-semibold">-9%</td>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="p-6 font-bold text-slate-700 text-left">6m² Standard</td>
+                            <td class="p-6 font-black text-xl text-slate-800">6 300 €</td>
+                            <td class="p-6 font-bold text-slate-400">1 050 €</td>
+                            <td class="p-6 text-green-600 font-black">-9%</td>
                         </tr>
-                        <tr class="hover:bg-gray-50">
-                            <td class="p-4 font-medium">12m² Premium</td>
-                            <td class="p-4 font-bold text-blue-600">13 000 €</td>
-                            <td class="p-4 text-gray-500">1 083 €</td>
-                            <td class="p-4 text-orange-600 font-semibold">+24%</td>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="p-6 font-bold text-slate-700 text-left">12m² Premium</td>
+                            <td class="p-6 font-black text-xl text-blue-600">13 000 €</td>
+                            <td class="p-6 font-bold text-slate-400">1 083 €</td>
+                            <td class="p-6 text-orange-600 font-black">+24%</td>
                         </tr>
-                        <tr class="hover:bg-gray-50 bg-slate-50">
-                            <td class="p-4 font-medium italic">Stands nus</td>
-                            <td class="p-4 font-bold">-</td>
-                            <td class="p-4 text-gray-500 font-bold">800 €</td>
-                            <td class="p-4 text-orange-600 font-semibold">+7%</td>
+                        <tr class="bg-slate-50/80 italic font-bold">
+                            <td class="p-6 text-slate-500 uppercase tracking-widest text-xs text-left">Stands nus</td>
+                            <td class="p-6">-</td>
+                            <td class="p-6 font-black text-slate-800">800 €</td>
+                            <td class="p-6 text-orange-600 font-black">+7%</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gray-50 p-6 rounded-2xl">
-                    <h3 class="font-bold text-lg mb-4 flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2003/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        Justification de l'évolution
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200">
+                    <h3 class="font-black text-xl mb-4 italic flex items-center gap-3">
+                        <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        Ce qui change en 2026
                     </h3>
-                    <ul class="text-sm space-y-2 text-gray-600">
-                        <li>• <strong>Stickage complet</strong> inclus sur tous les formats pré-équipés.</li>
-                        <li>• Nouveau design de stand pour les 4m² (plus qualitatif).</li>
-                        <li>• <strong>Soirée de Gala :</strong> 1 place incluse (Premium) ou 2 places (20m²+).</li>
-                        <li>• Répercussion partielle des coûts (locatif, énergie, salon).</li>
+                    <ul class="space-y-3 text-gray-600 font-medium leading-relaxed">
+                        <li>• <span class="text-blue-600">Stickage complet inclus</span> sur tous les formats équipés.</li>
+                        <li>• Nouveau design qualitatif pour les stands 4m².</li>
+                        <li>• <span class="text-blue-600 font-bold">1 place soirée de gala</span> incluse (Premium).</li>
+                        <li>• 2 places incluses pour les stands > 20m².</li>
                     </ul>
                 </div>
-                <div class="bg-orange-50 p-6 rounded-2xl border border-orange-100">
-                    <h3 class="font-bold text-lg mb-4 text-orange-900">Note sur le 6m²</h3>
-                    <p class="text-sm text-orange-800">Le prix du 6m² diminue cette année pour assurer une cohérence parfaite sur le prix au m² par rapport au plan global de l'événement.</p>
+                <div class="bg-blue-600 text-white p-8 rounded-3xl shadow-xl flex flex-col justify-center">
+                    <h3 class="font-black text-2xl mb-4 italic">Note sur le 6m²</h3>
+                    <p class="opacity-90 leading-relaxed font-medium text-lg italic">
+                        "Nous avons baissé le prix de ce format pour assurer une cohérence m² irréprochable sur l'ensemble du Palais."
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Argumentaire / Objections -->
-    <section id="objections" class="py-20 bg-slate-50">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12 text-center">Foire aux Objections</h2>
-            
-            <div class="space-y-4">
-                <details class="group bg-white rounded-xl shadow-sm border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex items-center justify-between cursor-pointer">
-                        <h3 class="font-bold text-lg flex items-center gap-3">
-                            <span class="text-red-500">✘</span> "Je n'ai pas eu de résultats l'an passé"
-                        </h3>
-                        <span class="transition group-open:rotate-180">
-                            <svg xmlns="http://www.w3.org/2003/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
-                        </span>
-                    </summary>
-                    <div class="mt-4 pt-4 border-t border-gray-100 text-gray-700 leading-relaxed">
-                        Toute la stratégie 2026 a été pensée pour augmenter le trafic : pass gratuit pour les patrons, invitations doublées, et communication massive. Notre seul objectif : <span class="font-bold text-blue-600">vous générer plus de leads.</span>
-                    </div>
-                </details>
-
-                <details class="group bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-                    <summary class="flex items-center justify-between cursor-pointer">
-                        <h3 class="font-bold text-lg flex items-center gap-3">
-                            <span class="text-red-500">✘</span> "C'est trop cher"
-                        </h3>
-                        <span class="transition group-open:rotate-180">
-                            <svg xmlns="http://www.w3.org/2003/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
-                        </span>
-                    </summary>
-                    <div class="mt-4 pt-4 border-t border-gray-100 text-gray-700 leading-relaxed">
-                        Vous investissez dans une audience composée de <span class="font-bold">80% de décideurs</span>. Un seul bon contact peut rentabiliser largement votre présence sur l'année. C'est l'événement central de la profession.
-                    </div>
-                </details>
-
-                <details class="group bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-                    <summary class="flex items-center justify-between cursor-pointer">
-                        <h3 class="font-bold text-lg flex items-center gap-3">
-                            <span class="text-red-500">✘</span> "Pas de budget"
-                        </h3>
-                        <span class="transition group-open:rotate-180">
-                            <svg xmlns="http://www.w3.org/2003/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
-                        </span>
-                    </summary>
-                    <div class="mt-4 pt-4 border-t border-gray-100 text-gray-700 leading-relaxed">
-                        Nous pouvons adapter la surface ou travailler sur une présence plus optimisée. Rappelez-vous que <span class="font-bold italic underline">ne pas être présent peut coûter plus cher en opportunités manquées.</span>
-                    </div>
-                </details>
+    <!-- Planning de Commercialisation -->
+    <section id="planning" class="py-24 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-black mb-16 text-center italic leading-tight text-slate-800">Calendrier Stratégique</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 relative pt-12">
+                    <div class="absolute -top-6 left-8 bg-blue-600 text-white p-4 rounded-2xl font-black text-xl shadow-lg italic">22 AVRIL</div>
+                    <h4 class="font-bold text-xl mb-2 text-slate-900">Soirée de Lancement</h4>
+                    <p class="text-gray-500 leading-relaxed">Contact direct VIP en amont pour sécuriser les emplacements premium.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 relative pt-12">
+                    <div class="absolute -top-6 left-8 bg-blue-600 text-white p-4 rounded-2xl font-black text-xl shadow-lg italic">23 AVRIL</div>
+                    <h4 class="font-bold text-xl mb-2 text-slate-900">Ouverture Commerciale</h4>
+                    <p class="text-gray-500 leading-relaxed">Campagne d'emailing globale et routage vers les cibles prioritaires.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 relative pt-12">
+                    <div class="absolute -top-6 left-8 bg-slate-900 text-white p-4 rounded-2xl font-black text-xl shadow-lg italic">JUILLET</div>
+                    <h4 class="font-bold text-xl mb-2 text-slate-900">Billetterie Web</h4>
+                    <p class="text-gray-500 leading-relaxed italic text-sm">Ouverture officielle : www.immocongresfnaim.com</p>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="mt-12 p-8 bg-blue-600 rounded-2xl text-white text-center">
-                <h3 class="text-xl font-bold mb-4">Focus Syndics / Copros</h3>
-                <p class="mb-2">N'oubliez pas les Trophées de la rénovation énergétique.</p>
-                <p class="text-blue-100 text-sm">30% de nos adhérents congressistes font du syndic.</p>
+    <!-- Traitement des Objections -->
+    <section id="objections" class="py-24 max-w-4xl mx-auto px-4">
+        <h2 class="text-4xl font-black mb-12 text-center italic tracking-tight text-slate-800">Traitement des Objections</h2>
+        <div class="space-y-4 text-left">
+            <details class="group bg-white rounded-3xl shadow-sm border border-slate-200 p-8 cursor-pointer">
+                <summary class="flex items-center justify-between list-none">
+                    <h3 class="font-black text-xl flex items-center gap-4 text-slate-800 italic">
+                        <span class="text-red-500 font-black">✘</span> "Pas de résultats l'an passé"
+                    </h3>
+                    <span class="transition group-open:rotate-180 text-blue-600"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></span>
+                </summary>
+                <div class="mt-6 pt-6 border-t border-slate-100 text-gray-600 leading-relaxed text-lg italic">
+                    La stratégie 2026 repose sur un trafic décuplé : gratuité pour les patrons, invitations doublées et communication massive. Notre but : <span class="font-bold text-blue-600">votre génération de leads.</span>
+                </div>
+            </details>
+            <details class="group bg-white rounded-3xl shadow-sm border border-slate-200 p-8 cursor-pointer">
+                <summary class="flex items-center justify-between list-none">
+                    <h3 class="font-black text-xl flex items-center gap-4 text-slate-800 italic">
+                        <span class="text-red-500 font-black">✘</span> "C'est trop cher"
+                    </h3>
+                    <span class="transition group-open:rotate-180 text-blue-600"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></span>
+                </summary>
+                <div class="mt-6 pt-6 border-t border-slate-100 text-gray-600 leading-relaxed text-lg italic">
+                    Un investissement sur une audience de <span class="font-bold">80% de décideurs</span>. Un seul bon contact peut rentabiliser votre stand pour l'année.
+                </div>
+            </details>
+            <details class="group bg-white rounded-3xl shadow-sm border border-slate-200 p-8 cursor-pointer">
+                <summary class="flex items-center justify-between list-none">
+                    <h3 class="font-black text-xl flex items-center gap-4 text-slate-800 italic">
+                        <span class="text-red-500 font-black">✘</span> "Pas de budget"
+                    </h3>
+                    <span class="transition group-open:rotate-180 text-blue-600"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></span>
+                </summary>
+                <div class="mt-6 pt-6 border-t border-slate-100 text-gray-600 leading-relaxed text-lg italic">
+                    Ne pas être présent peut coûter plus cher en opportunités manquées. Nous pouvons adapter la surface pour respecter votre budget.
+                </div>
+            </details>
+        </div>
+        
+        <div class="mt-12 p-10 bg-blue-600 rounded-3xl text-white text-center shadow-xl">
+            <h3 class="text-2xl font-black mb-4 italic">Focus Syndics / Copros</h3>
+            <p class="mb-4 text-blue-50">30% de nos congressistes font du syndic. Les Trophées de la rénovation sont un argument clé pour cette cible.</p>
+        </div>
+    </section>
+
+    <!-- Équipe / Contact -->
+    <section id="equipe" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-black mb-16 text-center italic leading-tight">Votre Équipe Dédiée</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center group">
+                    <div class="w-24 h-24 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center font-black text-2xl group-hover:scale-110 transition-transform italic border-2 border-white/10">JH</div>
+                    <h4 class="text-xl font-black text-white">Jean-François HANOT</h4>
+                    <p class="text-blue-400 text-sm font-bold uppercase tracking-widest mt-1">Président délégué / Référent élu</p>
+                    <a href="mailto:jfhanot@fnaim.fr" class="text-slate-400 hover:text-white transition-colors text-sm mt-2 block italic">jfhanot@fnaim.fr</a>
+                </div>
+                <div class="text-center group">
+                    <div class="w-24 h-24 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center font-black text-2xl group-hover:scale-110 transition-transform italic border-2 border-white/10">AD</div>
+                    <h4 class="text-xl font-black text-white">Aurélia DENIS</h4>
+                    <p class="text-blue-400 text-sm font-bold uppercase tracking-widest mt-1">Resp. Clientèle & Partenariats</p>
+                    <a href="mailto:adenis@fnaim.fr" class="text-slate-400 hover:text-white transition-colors text-sm mt-2 block italic">adenis@fnaim.fr</a>
+                </div>
+                <div class="text-center group">
+                    <div class="w-24 h-24 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center font-black text-2xl group-hover:scale-110 transition-transform italic border-2 border-white/10">SG</div>
+                    <h4 class="text-xl font-black text-white">Sophie GAULIER</h4>
+                    <p class="text-blue-400 text-sm font-bold uppercase tracking-widest mt-1">Communication & Billetterie</p>
+                    <a href="mailto:sgaulier@fnaim.fr" class="text-slate-400 hover:text-white transition-colors text-sm mt-2 block italic">sgaulier@fnaim.fr</a>
+                </div>
+            </div>
+            
+            <div class="mt-24 pt-12 border-t border-white/10 text-center">
+                <div class="flex flex-wrap justify-center gap-12 text-sm text-slate-400">
+                    <div><span class="text-blue-400 font-black italic">Commercialisation :</span> Tête-à-Tête</div>
+                    <div><span class="text-blue-400 font-black italic">Installation :</span> OPA</div>
+                    <div><span class="text-blue-400 font-black italic">Plénières :</span> CAPA</div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-gray-400 py-12 text-center">
-        <p class="mb-4">© 2026 Salon IMMO - Tête-à-tête Relation Client</p>
-        <div class="flex justify-center space-x-6 text-sm">
-            <a href="#" class="hover:text-white">Mentions légales</a>
-            <a href="#" class="hover:text-white">Conditions de vente</a>
-            <a href="#" class="hover:text-white">Contact</a>
+    <footer class="bg-black text-slate-600 py-12 px-4 text-center">
+        <div class="max-w-7xl mx-auto flex flex-col items-center gap-6">
+            <div class="text-xl font-black text-white italic tracking-tighter uppercase">IMMO <span class="text-blue-600">2026</span></div>
+            <div class="flex gap-8 text-xs font-bold uppercase tracking-widest">
+                <a href="#" class="hover:text-white transition-colors">Mentions légales</a>
+                <a href="#" class="hover:text-white transition-colors">Conditions de vente</a>
+                <a href="#" class="hover:text-white transition-colors">Contact</a>
+            </div>
+            <div class="pt-8 text-[10px] uppercase opacity-40 font-bold">© 2026 FNAIM - Agence Tête-à-Tête</div>
         </div>
     </footer>
 
